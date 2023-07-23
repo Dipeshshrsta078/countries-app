@@ -14,8 +14,7 @@ type StringQueryOperatorInput = {
 };
 
 const useGQL = () => {
-  const GET_ALL_COUNTRIES = (input: CountryFilterInput = {}) =>
-    useQuery(LIST_COUNTRIES, { variables: { input } });
+  const GET_ALL_COUNTRIES = () => useQuery(LIST_COUNTRIES);
 
   return {
     GET_ALL_COUNTRIES,
